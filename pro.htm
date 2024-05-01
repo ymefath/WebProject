@@ -8,18 +8,57 @@
     <title>Store</title>
 </head>
 <body style="margin:10px">
-    <div class="card mb-3" style="width: 100%; height: 100%;">
+    <div class="d-flex justify-content-center">
+    <div class="card p-4 d-inline-flex" style="width: 100%; height: 100%;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="images/product1.png" class="img-fluid rounded-start" alt="..." style="margin: 10px;">
+            <div id="carouselExampleIndicators" class="carousel slide" style="width: 130%;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/product1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/product1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/product1.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h1 class="card-title">Card title</h1>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <div class="card-body" style="margin-left: 30%;">
+              <h1 class="card-title display-3"><b>BTS T-shirt</b></h1>
+              <p class="card-text lead fs-5">
+                Plongez dans l'essence de la ville avec notre t-shirt "Harmonie Urbaine", 
+        une fusion parfaite entre le style contemporain et le confort ultime. 
+        Conçu pour les citadins modernes en quête d'expression personnelle, 
+        ce t-shirt incarne l'équilibre subtil entre 
+         l'audace urbaine et la sophistication décontractée.
+         <br>
+              </p>
+              <div class="d-grid gap-2">
+                <a class="btn btn-warning" href="#" role="button">Achetez maintenant</a>
+                <button class="btn btn-outline-warning" type="button">Ajouter au panier</button>
+                <button class="btn btn-outline-warning" type="button">Ajouter aux favoris</button>
+              </div>
+             
             </div>
           </div>
         </div>
       </div>
+    </div>
 </body>
