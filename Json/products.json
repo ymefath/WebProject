@@ -46,29 +46,5 @@
         "price": "50 DH",
         "description": "This is a stylish and comfortable T-shirt featuring the BTS logo.",
         "image": "images/product1.png"
-    },
-    {
-        "name": "Graphic Design Book",
-        "price": "100 DH",
-        "description": "A comprehensive guide to graphic design principles and techniques.",
-        "image": "images/product1.png"
-    },
-    {
-        "name": "BTS Poster",
-        "price": "30 DH",
-        "description": "A colorful and eye-catching poster featuring the BTS logo.",
-        "image": "images/product1.png"
-    },
-    {
-        "name": "BTS Stickers",
-        "price": "15 DH",
-        "description": "A set of adorable BTS stickers for your laptop, phone, or notebook.",
-        "image": "images/product1.png"
-    },
-    {
-        "name": "BTS Mug",
-        "price": "20 DH",
-        "description": "A cozy and stylish mug featuring the BTS logo.",
-        "image": "images/product1.png"
     }
 ]
