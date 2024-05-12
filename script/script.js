@@ -1,5 +1,3 @@
-// main.js
-
 document.addEventListener("DOMContentLoaded", function() {
     fetch('json/products.json')
         .then(response => response.json())
@@ -12,13 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="card h-100">
                             <img src="${product.image}" class="card-img-top" alt="Product Image">
                             <div class="card-body">
-                                <h5 class="card-title">${product.name}</h5>
-                                <p class="card-text fs-5"><strong>Price:</strong> ${product.price}</p>
-                                <div class="d-flex justify-content-end">
-                                    <a href="pro.htm?name=${encodeURIComponent(product.name)}
-                                    &price=${encodeURIComponent(product.price)}&description=${encodeURIComponent(product.description)}
-                                    &image=${encodeURIComponent(product.image)}" class="btn btn-warning align-self-end">View Product</a>
-                                </div>
+                                <h6 class="card-title">${product.name}</h6>
+                                <p class="card-text fs-59"><strong>Price:</strong> ${product.price}</p>
+                            </div>
+                            <div class="card-footer p-0">
+                                <a href="pro.htm?name=${encodeURIComponent(product.name)}&price=${encodeURIComponent(product.price)}&description=${encodeURIComponent(product.description)}&image=${encodeURIComponent(product.image)}" 
+                                class="btn btn-warning w-100" style="border-radius: 0;">View Product</a>
                             </div>
                         </div>
                     </div>
@@ -28,4 +25,3 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Error fetching products:', error));
 });
-
