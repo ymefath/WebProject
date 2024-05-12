@@ -1,0 +1,14 @@
+[
+    {
+        "name": "BTS T-shirt",
+        "price": "50 DH",
+        "description": "This is a stylish and comfortable T-shirt featuring the BTS logo.",
+        "image": "images/product1.png"
+    },
+    {
+        "name": "Graphic Design Book",
+        "price": "100 DH",
+        "description": "A comprehensive guide to graphic design principles and techniques.",
+        "image": "images/product1.png"
+    }
+]
