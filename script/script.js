@@ -10,7 +10,7 @@ fetch('Json/products.json')
             card.innerHTML = `
                 <div class="card-container d-flex flex-row flex-wrap gap-1">
                     <div class="card" style="width: 12rem;">
-                        <a href="product.htm" style="text-decoration:none;">
+                        <a href="pro.htm" style="text-decoration:none;">
                             <img src="${product.image}" class="card-img-top" alt="...">
                             <div class="card-body d-inline-block">
                                 <p class="card-text p-0 fs-6 m-0">${product.name}</p>
