@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('json/products.json')
         .then(response => response.json())
         .then(products => {
-            const productContainer = document.querySelector('.row');
+            const productContainer = document.querySelector('.row-cols-md-6');
 
             products.forEach(product => {
                 const productCard = `
