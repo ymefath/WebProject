@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    background-color: rgb(239, 240, 235);
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=date], select, textarea, fieldset{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+img{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #0b6d37;
+}
+
+div {
+display: block;
+width: 50%;
+margin: 30px auto;
+border-radius: 5px;
+background-color: rgb(171, 223, 156);
+padding: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+    </style>
+</head>
+<html>
+<body>
+
+<div>
+    <h1> Make a payment</h1>
+    <hr>
+  <form action="#">
+    
+    <h3>Contact Information</h3>
+    <label for="fname">Name: *</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+    <fieldset>
+        <legend>Gender</legend>
+        Male
+        <input type="radio" id="male" name="gender" value="male" required>
+        Female
+        <input type="radio" id="female" name="gender" value="female" required>
+        Others
+        <input type="radio" id="other" name="gender" value="other" required>
+    </fieldset>
+
+    <label for="address">Address:</label>
+    <textarea id="address" placeholder="Enter your address here..." required></textarea>
+
+    <label for="email">Email: *</label>
+    <input type="email" id="email" name="email" placeholder="mail@email.com" required>
+
+    <label for="pincode">Pincode: *</label>
+    <input type="number" id="pincode" name="pincode" maxlength="6" placeholder="123456" required>
+
+    <br>
+    <h3>Payment Information</h3>
+   
+    <label for="cardtype">Card Type: *</label>
+    <select id="cardtype" name="cardtype" required>
+      <option value="" selected>--Select Card Type--</option>
+      <option value="visa">VISA</option>
+      <option value="mastercard">Master Card</option>
+      <option value="rupay">Paypal</option>
+    </select>
+
+    <label for="cardnumber">Card Number: *</label>
+    <input type="number" id="cardnumber" name="cardnumber" maxlength="16" placeholder="1111-2222-3333-4444" required>
+
+    <label for="expirationdate">Expiration Date: *</label>
+    <input type="date" id="expirationdate" name="expirationdate" required> 
+
+    <label for="cvv">CVV: *</label>
+    <input type="number" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
