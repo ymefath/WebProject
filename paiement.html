@@ -45,13 +45,39 @@
           <input type="text" class="form-control" id="inputZip" placeholder="123">
         </div>
           <div class="col-md-6">
-           <button type="submit" class="btn btn-warning w-100">Submit Payment</button>
+           <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Submit Payment</button>
           </div>
           <div class="col-md-6">
-            <a href="http://Paypal.com" target="_blank" class="btn btn-secondary w-100">Paypal</a>
+            <a href="http://Paypal.com" target="_blank" class="btn btn-primary w-100">Paypal</a>
           </div>
-        
-      </form>
+          
+        <div class="col-12">
+          <a href="main.htm" class="btn btn-secondary w-100">Back to Home</a>
+        </div>  
+    </form>
+
+
+<!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4" id="staticBackdropLabel">Payment Successful</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  You have successfully made a payment
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- Modal -->
+
+
 
 </body>
 </html>
