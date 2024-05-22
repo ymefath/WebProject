@@ -21,7 +21,7 @@ ul{
   list-style: none;
 }
 .footer{
-    background-color: #dda600;
+    background-color: hsla(45, 100%, 43%, 0.838);
     padding: 70px 0;
 }
 .footer-col{
