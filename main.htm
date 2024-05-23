@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+      .hero-section {
+        background-image: url('images/back.jpeg'); /* Replace with your background image */
+      }
+    </style>
     <title>Store</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-warning sticky-top mb-4">
-    
+    <nav class="navbar navbar-expand-lg bg-warning sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand fs-4" href="#">
             <img src="/images/game.png" alt="Logo" width="60" height="auto" class="d-inline-flex">
-            
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,9 +62,18 @@
         </div>
       </nav>
 
+      <header>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Our Website</h1>
+                <p>Discover amazing products, services, and more!</p>
+                <a href="#products" class="btn">Explore Now</a>
+            </div>
+        </div>
+    </header>
 
       <div class="card p-2 d-inline-flex" style="width: 100%; height: 100%; border: 0;">
-        <div class="row g-2 mx-4 my-2 mb-4">
+        <div class="row g-2 mx-4 mt-5 mb-4">
           
           <div class="col-md-6 mt-5">
             <div class="card-body p-0">
@@ -70,9 +82,10 @@
                 BTS products that will elevate your daily routine.</p>
                 <a class="btn btn-warning rounded btn-md" style="width: 30%;" href="pro.htm" role="button">Buy Now</a>
                 <a class="btn btn-outline-secondary rounded btn-md ms-3" style="width: 30%;" href="#products" role="button">Discover</a>
-                
+            </div>
           </div>
-          </div>
+
+
           <div class="col-md-6">
             <div id="carouselExampleCaptions" class="carousel slide pointer-event" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -82,27 +95,21 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="images/product1.png" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title></svg>
+                  <div class="carousel-caption d-none d-md-block text-dark">
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="images/product1.png" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title></svg>
+                  <div class="carousel-caption d-none d-md-block text-dark">
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" src="images/product1.png" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title></svg>
+                  <div class="carousel-caption d-none d-md-block text-dark">
                   </div>
                 </div>
               </div>
@@ -118,16 +125,20 @@
           </div>
       </div>
    </div>
+
+
+
 <div class="bg-warning-light" id="features">
+
    <hr style="width: 100%; margin: 5rem 0;">
 
    <h1 class="display-1 text-center">Elevate Your Daily Routines</h1>
-   <h5 class="text-center text-secondary mb-5">Our latest collection offers a wide range of products designed 
+   <h5 class="text-center text-secondary mb-4">Our latest collection offers a wide range of products designed 
     to bring a touch of whimsy and creativity to your everyday life.</h5>
 
+
    <div class="card p-2 d-inline-flex bg-warning-light" style="width: 100%; height: 100%; border: 0;">
-    <div class="row g-2 mx-4 my-2 mb-4">
-      
+    <div class="row g-5 mx-4 my-2 mb-4">
       <div class="col-md-6 mt-5">
         <div class="card-body p-0">
           <h1 class="card-title display-6"><b>Enlivened Aesthetics</b></h1>
@@ -168,8 +179,11 @@
       </div>
   </div>
 </div>
+
  <hr style="width: 100%; margin: 5rem 0;">
+
 </div>
+
 
   <div class="container">
     <h1 class="text-left my-4" id="products">Explore Our Collection</h1>
@@ -178,7 +192,7 @@
     </div>
 </div>
 
-<div class="card text-center">
+<div class="card text-center w-100" style="border-radius: 0;">
   <div class="card-body bg-warning-light">
     <h5 class="card-title fs-2">Get in Touch</h5>
     <p class="card-text">Feel free to reach out to us. Our team is ready to assist you with any information you need. 
