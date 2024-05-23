@@ -36,11 +36,12 @@
     </div>
 </nav>
 
+
 <div class="container">
     <h1 class="text-left my-4">Contact Us</h1>
     <div class="row">
         <div class="col-md-6">
-            <div class="card mb-3">
+            <div class="card mb-3 shadow">
                 <div class="card-body">
                     <h5 class="card-title">Yassine Meftah</h5>
                     <p class="card-text">Feel free to reach out to us. Our team is ready to assist you with any information you need.</p>
@@ -54,7 +55,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="card mb-3">
+            <div class="card mb-3 shadow">
                 <div class="card-body">
                     <h5 class="card-title">Ayoub Zouitine</h5>
                     <p class="card-text">You can also contact my college for further assistance.</p>
@@ -72,32 +73,32 @@
 
 
 
-<div class="container mt-5">
-    <div class="border p-4">
-        <h2 class="text-center mb-4">Send us a Message <i class="fas fa-envelope"></i></h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Your Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                </form>
+<div class="container my-5">
+    <div class="border p-3 rounded shadow">
+      <h2 class="text-center mb-4">Send us a Message <i class="fas fa-envelope text-warning"></i></h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="form-group mb-3">
+              <label for="name" class="form-label"><strong>Your Name</strong></label>
+              <input type="text" class="form-control" id="name" placeholder="John Doe" required>
             </div>
+            <div class="form-group mb-3">
+              <label for="email" class="form-label"><strong>Your Email</strong></label>
+              <input type="email" class="form-control" id="email" placeholder="john.doe@example.com" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="message" class="form-label"><strong>Your Message</strong></label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Hello, I would like to..." required></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
 
 
