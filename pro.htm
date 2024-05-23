@@ -7,17 +7,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/bootstrap.min.css.map">
+    <link rel="stylesheet" href="style/footer.css">
     <script src="script/pro.js" defer></script>
+    <script src="script/script.js"></script>
     <title>Store</title>
 </head>
 <body>
 
   <nav class="navbar navbar-expand-lg bg-warning sticky-top">
-    
     <div class="container-fluid">
       <a class="navbar-brand fs-4" href="#">
         <img src="/images/game.png" alt="Logo" width="60" height="auto" class="d-inline-flex">
-        
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,20 +25,29 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="main.htm">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.htm">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sign up.html">Join us</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Made By
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="contact.htm">Yassine Meftah</a></li>
+              <li><a class="dropdown-item" href="contact.htm">Ayoub Zouitine</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">BTS MCW</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -47,11 +56,13 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
+
+  
     <div class="d-flex justify-content-center">
     <div class="card p-4 d-inline-flex" style="width: 100%; height: 100%;">
         <div class="row g-0">
@@ -107,6 +118,56 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <h1 class="text-left my-4 mt-5" id="products">Explore Our Collection</h1>
+      <div class="row flex-row flex-wrap  row-cols-md-5" style="margin-left: -4rem; margin-right: -4rem;">
+          <!-- Product cards will be dynamically added here -->
+      </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+     <div class="row">
+       <div class="footer-col">
+         <h4>company</h4>
+         <ul>
+           <li><a href="#">about us</a></li>
+           <li><a href="#">our services</a></li>
+           <li><a href="#">privacy policy</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>get help</h4>
+         <ul>
+           <li><a href="#">shipping</a></li>
+           <li><a href="#">returns</a></li>
+           <li><a href="#">order status</a></li>
+           <li><a href="paiement.html">payment options</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>online shop</h4>
+         <ul>
+           <li><a href="#">watch</a></li>
+           <li><a href="#">bag</a></li>
+           <li><a href="#">shoes</a></li>
+           <li><a href="#">dress</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+           <a href="https://www.facebook.com/yassine.meftah.908/"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.instagram.com/yassine_mef_/"><i class="fab fa-instagram"></i></a>
+         </div>
+       </div>
+     </div>
+    </div>
+  </footer>
+
          
   </body>
 </html>
