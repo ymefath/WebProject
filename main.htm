@@ -18,6 +18,8 @@
     <title>Store</title>
 </head>
 <body>
+
+  
     <nav class="navbar navbar-expand-lg bg-warning sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand fs-4" href="#">
@@ -54,9 +56,6 @@
                   <li><a class="dropdown-item" href="#">BTS MCW</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -84,7 +83,7 @@
               <h1 class="card-title display-2"><b>Introducing our Latest Collection.</b></h1>
               <p class="display-6" style="font-size: 2em;">Discover a wide range of vibrant and whimsical 
                 BTS products that will elevate your daily routine.</p>
-                <a class="btn btn-warning rounded btn-md" style="width: 30%;" href="pro.htm" role="button">Buy Now</a>
+                <a class="btn btn-warning rounded btn-md" style="width: 30%;" href="paiement.html" role="button">Buy Now</a>
                 <a class="btn btn-outline-secondary rounded btn-md ms-3" style="width: 30%;" href="#products" role="button">Discover</a>
             </div>
           </div>
@@ -203,35 +202,35 @@
       Whether it's about our products, services, or any other concerns, we're here to help.</p>
     <p class="card-text">You can contact us via email, phone, or by 
       filling out the form on our website. Don't hesitate to get in touch!</p>
-    <a href="contact.htm" class="btn btn-warning">Contact Now</a>
+    <a href="contact.htm" target="_blank" class="btn btn-warning">Contact Now</a>
   </div>
 </div>
 
 
 <div class="container my-5">
-  <div class="border p-3">
-      <h2 class="text-center mb-4">Send us a Message <i class="fas fa-envelope"></i></h2>
-      <div class="row justify-content-center">
-          <div class="col-md-8">
-              <form>
-                  <div class="mb-3">
-                      <label for="name" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                  </div>
-                  <div class="mb-3">
-                      <label for="email" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                  </div>
-                  <div class="mb-3">
-                      <label for="message" class="form-label">Your Message</label>
-                      <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                  </div>
-                  <div class="text-center">
-                      <button type="submit" class="btn btn-warning">Send Message</button>
-                  </div>
-              </form>
+  <div class="border p-3 rounded shadow">
+    <h2 class="text-center mb-4">Send us a Message <i class="fas fa-envelope text-warning"></i></h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="form-group mb-3">
+            <label for="name" class="form-label"><strong>Your Name</strong></label>
+            <input type="text" class="form-control" id="name" placeholder="John Doe" required>
           </div>
+          <div class="form-group mb-3">
+            <label for="email" class="form-label"><strong>Your Email</strong></label>
+            <input type="email" class="form-control" id="email" placeholder="john.doe@example.com" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="message" class="form-label"><strong>Your Message</strong></label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Hello, I would like to..." required></textarea>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
+          </div>
+        </form>
       </div>
+    </div>
   </div>
 </div>
 
@@ -264,8 +263,6 @@
        <ul>
          <li><a href="#">watch</a></li>
          <li><a href="#">bag</a></li>
-         <li><a href="#">shoes</a></li>
-         <li><a href="#">dress</a></li>
        </ul>
      </div>
      <div class="footer-col">

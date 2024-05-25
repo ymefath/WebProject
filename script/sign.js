@@ -15,3 +15,14 @@ document.getElementById('showLogin').addEventListener('click', function() {
     document.getElementById('showSignup').classList.remove('btn-warning');
     document.getElementById('showSignup').classList.add('btn-secondary');
 });
+
+// Add event listeners to redirect to main.htm on form submission
+document.getElementById('signupFormElement').addEventListener('submit', function(event) {
+    event.preventDefault();
+    location.href = 'main.htm';
+});
+
+document.getElementById('loginFormElement').addEventListener('submit', function(event) {
+    event.preventDefault();
+    location.href = 'main.htm';
+});
