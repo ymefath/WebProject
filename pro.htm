@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/bootstrap.min.css.map">
     <link rel="stylesheet" href="style/footer.css">
@@ -12,7 +13,7 @@
     <link rel="icon" href="images/bts 3.png">
     <script src="script/pro.js" defer></script>
     <script src="script/script.js"></script>
-    <title>Store</title>
+    <title>Produit BTS</title>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="main.htm">Home</a>
+            <a class="nav-link" aria-current="page" href="main.htm">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#features">Features</a>
@@ -102,21 +103,43 @@
               </p>
               <div class="d-grid gap-2">
                 <div class="d-inline-flex gap-3">
-                <a class="btn btn-warning fs-5 p-3" href="#" role="button" style="width: 80%;">Achetez maintenant</a>
+                <a class="btn btn-warning fs-5 p-3" href="paiement.htmls" role="button" style="width: 80%;">Achetez maintenant</a>
                 <div data-mdb-input-init class="form-outline" style="width: 15rem;">
                     <label class="form-label" for="typeNumber">Entrer la quantité souhaité</label>
                     <input min="1" max="20" type="number" id="typeNumber" class="form-control" />
                 </div>
                 </div>
-                <button class="btn btn-outline-secondary" type="button">Ajouter au panier</button>
-                <button class="btn btn-outline-secondary" type="button">Ajouter aux favoris</button>
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ajouter au panier</button>
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ajouter aux favoris</button>
               </div>
-             
             </div>
           </div>
         </div>
       </div>
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="staticBackdropLabel">Operation Successful</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Le produit a bien ete ajoute au panier.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+
+
+
 
     <div class="container">
       <h1 class="text-left my-4 mt-5" id="products">Explore Our Collection</h1>
@@ -154,7 +177,6 @@
          <h4>get help</h4>
          <ul>
            <li><a href="#">shipping</a></li>
-           <li><a href="#">returns</a></li>
            <li><a href="#">order status</a></li>
            <li><a href="paiement.html">payment options</a></li>
          </ul>
@@ -164,8 +186,6 @@
          <ul>
            <li><a href="#">watch</a></li>
            <li><a href="#">bag</a></li>
-           <li><a href="#">shoes</a></li>
-           <li><a href="#">dress</a></li>
          </ul>
        </div>
        <div class="footer-col">
