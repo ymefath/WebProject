@@ -1,12 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Fetch data from the deployed MongoDB API on Render
-    fetch('https://web2-nwcl.onrender.com/api/products')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
+    fetch('json/products.json')
+        .then(response => response.json())
         .then(products => {
             const productContainer = document.querySelector('.row.flex-row.flex-wrap');
 
