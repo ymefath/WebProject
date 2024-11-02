@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('json/products.json')
+    fetch('https://web2-nwcl.onrender.com/api/products')
         .then(response => response.json())
         .then(products => {
             const productContainer = document.querySelector('.row.flex-row.flex-wrap');
